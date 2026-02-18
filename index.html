@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>টাকা আয় করুন - বিজ্ঞাপন দেখুন</title>
     <!-- Monetag SDK – updated zone -->
-    <script src='//libtl.com/sdk.js' data-zone='10492577' data-sdk='show_10492577'></script>
+    <script src='//libtl.com/sdk.js' data-zone='10624003' data-sdk='show_10624003'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -1332,15 +1332,15 @@
         const MINING_AD_INTERVAL = 15; // মাইনিং এড ইন্টারভাল (সেকেন্ড)
         
         // Telegram Bot Configuration - updated with new values
-        const BOT_TOKEN = "8293278056:AAG_zpaIRwQeWp2gM-L8i5AGsJqDJnp0ceI";
-        const ADMIN_CHAT_ID = "6508101330";
-        const REFERRAL_BOT_LINK = "https://t.me/Red_Apple_Zone_Bot";
-        const SUPPORT_BOT_LINK = "https://t.me/FUTURE_PLANING_BD";
+        const BOT_TOKEN = "8534296063:AAG0Pm16WsVv_MYQaIaBgJfU9xMY0-4U_bE";
+        const ADMIN_CHAT_ID = "7949394001";
+        const REFERRAL_BOT_LINK = "https://t.me/+FnfsvBF8no8wMGE1";
+        const SUPPORT_BOT_LINK = "https://t.me/+FnfsvBF8no8wMGE1";
         
         // Task Links - updated first channel
         const TASK_LINKS = {
-            task1: "https://t.me/FUTURE_PLANING_BD",
-            task2: "https://t.me/ProfitPathInfo"
+            task1: "https://t.me/+3YIXbkQi_7wzMTc1",
+            task2: "https://t.me/+FnfsvBF8no8wMGE1"
         };
         
         // Variables
@@ -1655,7 +1655,7 @@
         function showMiningAd() {
             if (!isMiningActive) return;
             
-            if (typeof window.show_10492577 !== 'function') {
+            if (typeof window.show_10624003 !== 'function') {
                 showNotification('বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...', 'error');
                 restartMiningTimer();
                 return;
@@ -1663,7 +1663,7 @@
             
             try {
                 // Show the ad
-                window.show_10492577().then(() => {
+                window.show_10624003().then(() => {
                     // Ad watched successfully
                     miningSessionPoints += MINING_POINTS_PER_AD;
                     earnedPoints += MINING_POINTS_PER_AD;
@@ -1853,7 +1853,7 @@
 
         // Check if Monetag ad is ready - updated to use new SDK function
         function checkAdReady() {
-            if (typeof window.show_10492577 !== 'function') {
+            if (typeof window.show_10624003 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-spinner fa-spin"></i> বিজ্ঞাপন সিস্টেম লোড হচ্ছে...';
                 setTimeout(checkAdReady, 1000);
             } else {
@@ -1911,7 +1911,7 @@
         function watchAd() {
             if (isAdLoading) return;
             
-            if (typeof window.show_10492577 !== 'function') {
+            if (typeof window.show_10624003 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...';
                 return;
             }
@@ -1923,7 +1923,7 @@
             
             try {
                 // Show the ad
-                window.show_10492577().then(() => {
+                window.show_10624003().then(() => {
                     // Ad watched successfully
                     watchedAdsCount++;
                     earnedPoints += POINTS_PER_AD;
@@ -2170,3 +2170,4 @@
     </script>
 </body>
 </html>
+
